@@ -2,6 +2,7 @@ public class Block {
 
     private String fraName;
     private String tilName;
+
     private int sum;
     private String previousHash;
     private String blockHash;
@@ -26,12 +27,36 @@ public class Block {
         return calculatedHash;
     }
 
-    public String getName() {
+    public String getFraName() {
         return fraName;
     }
 
-    public void setName(String fraName) {
+    public void setFraName(String fraName) {
         this.fraName = fraName;
+    }
+
+    public String getTilName() {
+        return tilName;
+    }
+
+    public void setTilName(String tilName) {
+        this.tilName = tilName;
+    }
+
+    public int getSum() {
+        return sum;
+    }
+
+    public void setSum(int sum) {
+        this.sum = sum;
+    }
+
+    public int getNonce() {
+        return nonce;
+    }
+
+    public void setNonce(int nonce) {
+        this.nonce = nonce;
     }
 
     public String getPreviousHash() {
